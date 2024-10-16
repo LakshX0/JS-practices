@@ -24,3 +24,23 @@ class Worker extends Person {
     this.xp += 10;
   }
 }
+
+function intern() {
+  let intern = new Worker(0, 10, "Bob", 110);
+  intern.goToWork();
+
+  return intern;
+}
+
+let newIntern = intern();
+console.log(newIntern);
+
+function manager() {
+  let manager = new Worker(100, 30, "Alice", 120);
+  manager.doSomethingFun();
+
+  return manager;
+}
+
+let newManager = manager();
+console.log(newManager);
